@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Critter Care - Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/main.js"></script>
+    <link id="page-theme" rel="stylesheet" href="/css/sakura.css" />
+    <link rel="stylesheet" href="css/accessible.css" />
+    <link rel="icon" href="https://cdn.glitch.global/13057105-4ab8-4616-b6da-d9ed582fe1ad/pawprintheart.png?v=1697227776576" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <form id="logoutButton" action="/" method="GET">
+        <input type="submit" value="Logout" />
+      </form>
+      <img
+        id="paw-logo"
+        src="https://cdn.glitch.global/13057105-4ab8-4616-b6da-d9ed582fe1ad/pawprintheart.png?v=1697227776576"
+        alt="Paw Print"
+      />
+      <h1>Critter Care</h1>
+      <img
+        id="pug-pic"
+        src="https://cdn.glitch.global/393e5abf-4650-448c-8842-bf58cc4433ca/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg?v=1697113733508"
+        alt="Black pug wearing a sweater"
+      />
+      <p id="how-to">How to keep your critter alive:</p>
+      <ol>
+        <li>Use the clicker button to gain money</li>
+        <li>Buy a critter</li>
+        <li>Use your money to buy things your critter needs to live</li>
+        <li>Give your critters the resources they need to survive</li>
+        <li>Good luck!</li>
+      </ol>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Critter Dashboard -->
+      <div class="critter-dashboard">
+        <h2>Critter Dashboard</h2>
+        <!-- One of these divs will be created for each critter when the user clicks the buy critter button -->
+        <!-- We could also display all critters in a table instead if that's easier -->
+        <div class="critter">
+          <table id="resultsTable">
+            <tr>
+              <th>Critter Name</th>
+              <th>Type</th>
+              <th>Life Points</th>
+              <th>Feed</th>
+              <th>Exercise</th>
+              <th>Sleep</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Money Resource Tracker -->
+      <div class="money-resource-tracker">
+        <h2>Money and Resource Tracker</h2>
+        <button id="money-button">+ $$$</button><br />
+        <table id="money-resource-table">
+          <thead>
+            <tr>
+              <th id="money-col">$$$</th>
+              <th id="food-col">Food</th>
+              <th id="exercise-col">Exercise</th>
+              <th id="sleep-col">Sleep</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="money-val"></td>
+              <td id="food-val"></td>
+              <td id="exercise-val"></td>
+              <td id="sleep-val"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Buy Critter -->
+      <div class="buy-critter">
+        <form id="buy-critter-form">
+          <h2>Buy a Critter</h2>
+          <label for="critter-name" class="req">Critter name</label>
+          <input
+            type="text"
+            id="critter-name"
+            name="critter-name"
+            placeholder="critter name here"
+            required
+          />
+          <br />
+          <label for="critter-type" class="req">Choose a critter type</label>
+          <select id="critter-type" name="critter-type" required>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Turtle">Turtle</option>
+            <option value="Bunny">Bunny</option>
+          </select>
+          <br />
+          <button id="buy-critter-button">Buy Critter (-$50)</button>
+          <p id="buyCritterFail"></p>
+        </form>
+      </div>
+      <!-- Buy Resources -->
+      <div class="buy-resources">
+        <h2>Buy Critter Resources</h2>
+        <button id="buy-food-button">Buy Food (-$10)</button><br />
+        <button id="buy-exercise-button">Buy Exercise (-$15)</button><br />
+        <button id="buy-sleep-button">Buy Sleep (-$5)</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>A-Term 2023 Webware Final Project</p>
+      <p id="copyright">&copy; Copyright 2023 Nicole, Juliana, Julie</p>
+    </footer>
+  </body>
+</html>

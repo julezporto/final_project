@@ -1,49 +1,70 @@
-# Final Project
-*Due October 13th (final day of the term)*
+# Critter Care
 
-For your final project, you'll implement a web application that exhibits understanding of the course materials. 
-This project should provide an opportunity to both be creative and to pursue individual research and learning goals.
+### WPI Webware Final Project: [https://crittercare.glitch.me/](https://crittercare.glitch.me/)
+Created by Juliana Porto, Julie Vieira, and Nicole Burgess
 
-## General description
-Your project should consist of a complete Web application, exhibiting facets of the three main sections of the course material:
+## Welcome to Critter Care!
 
-- Static web page content and design. You should have a project that is accessible, easily navigable, and features significant content.
-- Dynamic behavior implemented with JavaScript (TypeScript is also allowed if your group wants to explore it).
-- Server-side programming *using Node.js*. Typically this will take the form of some sort of persistent data (database), authentication, and possibly server-side computation. 
-- A video (less than five minutes) where each group member explains some aspect of the project. An easy way to produce this video is for you all the groups members to join a Zoom call that is recorded; each member can share their screen when they discuss the project or one member can "drive" the interface while other members narrate (this second option will probably work better.) The video should be posted on YouTube or some other accessible video hosting service. Make sure your video is less than five minutes, but long enough to successfully  explain your project and show it in action. There is no minimum video length.
+First, login to our example user account. The account information can be found below.
 
-## Project ideation
-Excellent projects typically serve someone/some group; for this assignment you need to define your users and stakeholders. I encourage you to identify projects that will have impact, either artistically, politically, or in terms of productivity. 
+- _Username_: animalLover
+- _Password_: pass123
 
-### Deliverables
+You can also create a new account or login to an existing one, but for grading purposes this preset account will help you avoid lots of unnecessary clicking.
+  
+This account currently has no critters and a starting balance of $50. You can use this $50 to buy a critter in the Buy a Critter section. Enter your critter name, select your desired critter type, then click the `Buy Critter (-$50)` button.
 
-#### Form Team (due 9/25)
-Students are will work in teams of 3-5 students for the project; teams of two can be approved with the permission of the instructor. Working in teams should help enable you to build a good project in a limited amount of time.  Use the `#project-logistics` channel in Discord to pitch ideas for final projects and/or find fellow team members as needed.
+After your critter has been bought, its lifepoints will begin to decrease over time. To increase your critter's lifepoints and keep it alive, buy resources using the `+$$$` button or hitting the space bar on your keyboard, and apply those resources to your specific critter.
 
-Teams must be in place by end of day on Sunday, September 25th. If you have not identified a team at this point, you will be assigned a team. You will be given some class time on Monday to work on your proposal, but please plan on reserving additional time outside of class as needed.
+As you continue the game, you can buy more critters - _just remember to keep them all alive_!
 
-#### Proposal (due 9/27) 
-Provide an outline of your project direction and the names of associated team members. 
-The outline should have enough detail so that staff can determine if it meets the minimum expectations, or if it goes too far to be reasonable by the deadline. Please include a general description of a project, and list of key technologies/libraries you plan on using (e.g. React, Three.js, Svelte, TypeScript etc.). Two to four paragraps should provide enough level of detail. Name the file proposal.md and submit a pull request by Tuesday, September 27th at 11:59 PM (end of day). Only one pull request is required per team.
+If a critter runs out of lifepoints, you will no longer be able to feed it, exercise it, or sleep it; however, it will stay in your critter table so that it's memory lives on!
 
-There are no other scheduled checkpoints for your project. 
+### To accomplish this:
 
-#### Turning in Your Project
-Submit a second PR on the final project repo to turn in your app and code. Again, only one pull request per team.
+- Frontend UI components were created using HTML, CSS, JavaScript, and Handlebars JS.
+- MongoDB was used for persistent data storage.
+- An Express.js server was used to connect the frontend UI to the backend database.
+- Cookies were used to maintain user sessions.
+- The [sakura](https://oxal.org/projects/sakura/) CSS classless framework was used for the bulk of styling. Additional CSS overriding was used for various accessibility and functionality purposes.
+- User logins are verified using a table in the MongoDB database that stores all usernames and passwords.
+- Implemented accessibility features using some of W3C's tips for writing, tips for designing, and tips for development.
+- Added media queries for mobile UI styling.
 
-Deploy your app, in the form of a webpage, to Glitch/Heroku/Digital Ocean or some other service; it is critical that the application functions correctly wherever you post it.
+As explained above, we took various pieces of what we learned throughout the term and implemented them into one fun and engaging project! The game logic proved itself much more challenging than the logic each of us used in A3 and working as a group on such an intense full-stack project also had its benefits and downfalls. Overall, we learned a lot and created a complex and successful final project that displays our skills and that we are proud of!
 
-The README for your second pull request doesn’t need to be a formal report, but it should contain:
+### Challenges we encountered:
 
-1. A brief description of what you created, and a link to the project itself (two paragraphs of text)
-2. Any additional instructions that might be needed to fully use your project (login information etc.)
-3. An outline of the technologies you used and how you used them.
-4. What challenges you faced in completing the project.
-5. What each group member was responsible for designing / developing.
-6. A link to your project video.
+- Having to change various html structures (example: changing how we displayed critters from a list to a table) for easier implementation.
+- Making sure everyone understood the game design and logic before digging into the code.
+- Using various functions created by other team members to minimize extra work and/or repetitive code.
 
-Think of 1,3, and 4 in particular in a similar vein to the design / tech achievements for A1—A4… make a case for why what you did was challenging and why your implementation deserves a grade of 100%.
+### What we learned:
 
-## FAQs
+- How to create a full-stack web application from start to finish.
+- The importance of implementing accessibility features.
+- Why you should thoroughly plan our your application design and logic before starting any code.
+- The advantages and limitations of the browser.
 
-- **Can I use XYZ framework?** You can use any web-based frameworks or tools available, but for your server programming you need to use Node.js. Your client-side scripting language should be either JavaScript or TypeScript.
+### Contribution Breakdown:
+
+| Task                              | Member                    |
+| :-------------------------------- | :------------------------ |
+| Project Concept                   | Juliana, Julie, & Nicole  |
+| UI Design                         | Juliana                   |
+| User Login Functionality          | Juliana                   |
+| Create User Functionality         | Juliana & Julie           |
+| Money Clicker Button              | Juliana                   |
+| Buy Food Button                   | Juliana                   |
+| Buy Exercise Button               | Juliana                   |
+| Buy Sleep Button                  | Juliana                   |
+| Buy Critter Button                | Julie                     |
+| Feed Critter Button               | Julie                     |
+| Exercise Critter Button           | Julie                     |
+| Sleep Critter Button              | Julie                     |
+| Lifepoint Decrease Functionality  | Juliana & Nicole          |
+| Presentation                      | Juliana, Julie, & Nicole  |
+| Video Demo                        | Juliana, Julie, & Nicole  |
+| READ.ME                           | Juliana                   |
+
+### Demo Video: [CS4241 Final Project Critter Care, Nicole, Juliana, Julie](https://www.youtube.com/watch?v=LpaoW_cZKPI)
