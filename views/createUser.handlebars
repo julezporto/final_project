@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <title>Virtual Pet Game - Create Account</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/main.js"></script>
+    <link id="page-theme" rel="stylesheet" href="/css/sakura.css" />
+    <link rel="stylesheet" href="css/accessible.css" />
+    <link rel="icon" href="https://cdn.glitch.global/13057105-4ab8-4616-b6da-d9ed582fe1ad/pawprintheart.png?v=1697227776576" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="paw-logo"
+        src="https://cdn.glitch.global/13057105-4ab8-4616-b6da-d9ed582fe1ad/pawprintheart.png?v=1697227776576"
+        alt="Paw Print"
+      />
+      <h1>Critter Care</h1>
+      <img
+        id="pug-pic"
+        src="https://cdn.glitch.global/393e5abf-4650-448c-8842-bf58cc4433ca/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg?v=1697113733508"
+        alt="Black pug wearing a sweater"
+      />
+      <h2>Create your account</h2>
+    </header>
+    <main>
+      <form action="/create" method="POST">
+        <input type="text" name="username" placeholder="username" />
+        <input type="password" name="password" placeholder="password" />
+        <input type="submit" value="Create account" />
+      </form>
+      <p id="createAccountFail"></p>
+      <form action="/" method="GET">
+        <input type="submit" value="Back to login" />
+      </form>
+    </main>
+  </body>
+</html>
