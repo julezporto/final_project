@@ -1,5 +1,7 @@
 # Critter Care
 
+_Note_: The link below is no longer active, but all code is accurate.
+
 ### WPI Webware Final Project: [https://crittercare.glitch.me/](https://crittercare.glitch.me/)
 Created by Juliana Porto, Julie Vieira, and Nicole Burgess
 
